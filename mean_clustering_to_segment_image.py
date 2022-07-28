@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-path = 'test_images/test_data.jpeg'
+path = 'input_images/test_data.jpeg'
 
 img = cv2.imread(path, 0)
 

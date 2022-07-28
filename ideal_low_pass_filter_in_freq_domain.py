@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-path = 'test_images/test_data.jpeg'
+path = 'input_images/test_data.jpeg'
 
 img = cv2.imread(path, 0)
 
@@ -39,7 +39,7 @@ imback = np.uint8(np.real(imback))
 cv2.imshow('cutoff frequency: ' + str(cutoff), imback)
 cv2.imshow('original image', img)
 
-cv2.imwrite('low_pass_output.tif', imback)
+cv2.imwrite('low_pass_output.jpeg', imback)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
